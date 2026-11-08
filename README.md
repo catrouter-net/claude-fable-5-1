@@ -1,14 +1,14 @@
-# Claude Fable 5.1代理API中转推荐_Catrouter中转API国内直连可试用稳定可靠的Claude Fable 5.1 API中转站
+# Claude Fable 5.1 中转站推荐：国内直连、可试用、2026 单价与接入方式
 
 > 和 Fable 5 同价，缓存读取便宜 75%，长跑 Agent 的账单能省掉四分之一到近一半；同一底层模型另有 Mythos 5.1，只差在安全防护层级。
 
 如果你希望在国内稳定、低延迟地调用 **Claude Fable 5.1**，又不想折腾网络环境、海外账号和复杂计费，那么 **CatRouter 中转API** 是一个值得优先考虑的选择。平台提供国内直连线路，兼容 OpenAI 标准协议与 Anthropic 原生 SDK，只需把 BaseURL 换成 `https://catrouter.net/v1`、Key 换成中转 Key，业务代码基本不用改。
 
-官方接入站点：[https://catrouter.net](https://catrouter.net)
+官方接入站点：[https://catrouter.net](https://catrouter.net)　｜　模型详情页：[Claude Fable 5.1 中转站说明](https://catrouter-net.github.io/catrouter-hub/models/claude-fable-5-1/)　｜　数据核对：2026-11-09
 
 ---
 
-## Claude Fable 5.1是什么？核心能力一览
+## Claude Fable 5.1 是什么：参数、跑分与版本
 
 Claude Fable 5.1 由 **Anthropic** 推出，发布时间 **2026年9月1日**，属于文本与推理类模型。和 Fable 5 同价，缓存读取便宜 75%，长跑 Agent 的账单能省掉四分之一到近一半；同一底层模型另有 Mythos 5.1，只差在安全防护层级。
 
@@ -32,7 +32,7 @@ Claude Fable 5.1 由 **Anthropic** 推出，发布时间 **2026年9月1日**，�
 
 ---
 
-## 国内调用 Claude Fable 5.1 的三大现实难题
+## 国内直连 Claude Fable 5.1 会遇到什么
 
 即便模型能力再强，国内开发者在真实项目里往往会先撞上这三堵墙：
 
@@ -48,13 +48,13 @@ cache_control 不显式标注，缓存命中率上不去，省的那 25% 就白�
 
 国内直连 Anthropic 官方端点在高峰期容易超时，长任务尤其明显。
 
-这正是「中转站」存在的意义：
+这也是「Claude Fable 5.1 中转站」存在的意义：
 
 > **Claude Fable 5.1 中转站 = 国内可直连的 API 转发服务**，你只拿中转地址 + 中转 Key，请求由平台安全转发到上游，返回原始响应。
 
 ---
 
-## 为什么选 CatRouter 中转API 做 Claude Fable 5.1 代理
+## Claude Fable 5.1 中转 API 怎么选：六条判断标准
 
 **1. 稳定优先，长任务不断线**
 
@@ -82,7 +82,7 @@ cache_control 不显式标注，缓存命中率上不去，省的那 25% 就白�
 
 ---
 
-## Claude Fable 5.1 中转站接入教程（3 分钟）
+## Claude Fable 5.1 国内直连怎么配（OpenAI 兼容 / Anthropic 原生）
 
 ### 第 1 步：拿地址与 Key
 
@@ -137,7 +137,7 @@ print(msg.content)
 
 ---
 
-## Claude Fable 5.1 适用场景
+## Claude Fable 5.1 适合什么场景
 
 - 长跑编码 Agent：跨仓重构、多轮修 bug、CI 失败自查。
 - 多步研究与知识工作：法律、金融、投研类长文档交叉核对。
@@ -146,7 +146,7 @@ print(msg.content)
 
 ---
 
-## 常见问题 FAQ
+## 常见问题：Claude Fable 5.1 中转站哪个靠谱、多少钱、会不会限速
 
 **Q：Claude Fable 5.1 中转站哪个靠谱？**
 
@@ -164,15 +164,26 @@ A：同一个模型，Mythos 5.1 防护更严、只对特定机构开放；一�
 
 A：把系统提示、工具定义、长文档放在请求前部并保持字节一致，显式标注 cache_control。
 
+**Q：Claude Fable 5.1 中转 API 多少钱？会不会比官方贵很多？**
+
+A：中转按官方价乘倍率结算，贵出来的部分买的是线路与运维。控制台能看到每次调用的输入/输出 token 与单价，先小额跑一天真实流量再判断划不划算。
+
+**Q：国内直连 Claude Fable 5.1 会被限速吗？**
+
+A：取决于平台的线路与并发配额。多节点线路通常会给到明确的 RPM/TPM；单线平台在晚高峰容易 429。压测时连跑 20–50 次看 P95 延迟和失败率更靠谱。
+
 **Q：中转站和自建代理怎么选？**
 
 A：自建只适合有专职运维的团队，线路、扩容、故障切换、结算都要自己扛；多数团队用中转，省下的是人力与试错时间。
 
 ---
 
-## 相关长尾关键词
+## 延伸阅读
 
-Claude Fable 5.1 中转、fable-5-1 代理API、国内直连 可试用、稳定靠谱低延迟、长跑 Agent 便宜、缓存读取 省钱、2026 最新中转站推荐、Anthropic 原生协议、按量计费 不限额、Mythos 5.1 区别。
+- [Claude Fable 5.1 中转站说明（参数、单价、适用场景）](https://catrouter-net.github.io/catrouter-hub/models/claude-fable-5-1/)
+- [2026 年中转站怎么挑：五个能当场验证的指标](https://catrouter-net.github.io/catrouter-hub/guide/)
+- [模型价格测算：一个月大概花多少](https://catrouter-net.github.io/catrouter-hub/price/)
+- [三步接入与六个常见报错](https://catrouter-net.github.io/catrouter-hub/setup/)
 
-更多模型与接入文档见 [CatRouter 中转API](https://catrouter.net)，平台聚合 500+ 主流模型，支持按量计费、免费试用与统一账单。
+全部模型索引见 [CatRouter 模型导航](https://catrouter-net.github.io/catrouter-hub/)，官方站点 [https://catrouter.net](https://catrouter.net)。
 
